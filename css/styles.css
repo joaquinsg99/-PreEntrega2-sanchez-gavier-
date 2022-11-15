@@ -176,4 +176,65 @@ footer input {
     width: 50em;
 }
 
+
 /* estilos clubes */
+
+/*estilos main*/
+.main-clubes {
+    margin-top: 0.8em;
+    display: grid;
+    grid-template-areas:
+    "tittle1 tittle2"
+    "img1 img2"
+    "text1 text2" ;
+    gap: 1em 1em;
+     
+}
+ 
+.foto-barcelona {
+    width: 15em;
+    grid-area: img1;
+   align-items: center; 
+    
+}
+.foto-psg {
+    width: 30em;
+    grid-area: img2;
+    
+}
+   
+.text1{
+    grid-area: text1;
+    justify-self: center;
+    text-align: center;
+    border: solid black;
+    box-shadow: 6px 5px 5px black;
+    background-color: rgb(161, 200, 233);
+   
+}
+.text2{
+    grid-area: text2;
+    justify-self: center;
+    text-align: center;
+    border: solid black;
+    box-shadow: 6px 5px 5px black;;
+    background-color: rgb(161, 200, 233);
+    
+    
+}
+
+.tittle1 {
+    grid-area: tittle1;
+    justify-self: center;
+    border: solid black;
+    box-shadow: 6px 5px 5px black;;
+    
+
+}
+.tittle2{
+    grid-area: tittle2;
+    justify-self: center;
+    border: solid black;
+    box-shadow: 6px 5px 5px black;;
+}
+
