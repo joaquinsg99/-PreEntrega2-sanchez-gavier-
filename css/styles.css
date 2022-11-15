@@ -1,0 +1,147 @@
+/* reset */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+body {
+    background-color: whitesmoke;
+}
+
+/* styles header index */
+ header{
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+header img {
+    width: 100px;
+    
+}
+
+header nav {
+    display: block;
+    align-self:center ;
+}
+
+header nav ul li {
+    list-style: none;
+    display: inline-block;
+    background-color: #00AEEF;
+    padding: 5px;
+    margin: 3px;
+    
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* styles main index */
+main {
+    text-align: center;
+}
+
+main h1 {
+    font-size: 60px
+   
+}
+main img {
+    width: 600px;
+}
+
+main p {
+    display: block;
+    border: dashed 1px #00AEEF;
+    margin: 40px;
+}
+/* styles footer index */
+footer {
+    text-align: center;
+}
+
+footer h2 {
+    font-size: 20px;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 40px 0px 40px 0px;
+    padding: 10px;
+}
+
+
+footer ul li img {
+    width: 20px;
+}
+
+footer h3 {
+    font-size: 15px;
+}
+
+.logo {
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+/* estilos pages-bibliografia */
+
+/*estilos header-bibliografia*/
+header h2 {
+    border: solid;
+    margin-top:  20px;
+    background-color:#CDECFC ;
+    }
+
+  
+
+
+   /*ESTILOS MAIN */
+ main div {
+   margin-left: 500px;
+    text-align: center;
+    background-color:#CDECFC;
+    width: 600px; 
+ }
+
+ main div h3, main div ul ol {
+    margin-bottom: 10px;
+ }
+ 
+ footer input {
+    width: 400px;
+ } 
+
+/* estilos mejores-jugadas */
+
+.contenedores-videos1{
+  position: relative;
+  left: 400px; 
+  background-color: lightblue;
+  
+}
+.contenedores-videos2{
+position: relative;
+right: 400px;
+bottom: 694px;
+background-color: lightblue;
+}
+
+/*estilos clubes */
+
+.foto-barcelona {
+    width: 300px;
+}
+.foto-psg {
+    width: 300px;
+}
+/*selección */
+
+.footer-seleccion{
+    margin-top: 20px;
+}
