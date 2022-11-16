@@ -293,3 +293,89 @@ footer input {
 
 /* estilos mejores jugadas */
 
+.main-jugadas {
+    display: flex;
+    align-items: center;
+}
+   
+
+.titulos-jugadas{
+    display: none;
+}
+
+/* MQ */
+@media screen and (min-width:600px) {
+.titulos-jugadas {
+    display: block;
+    text-align: center;
+}
+
+.contenedores-videos1{
+    width: 50%;
+    
+}
+.contenedores-videos2{
+    width: 50%;
+}
+.contenedores-videos3{
+    width: 50%;
+}
+.contenedores-videos4{
+    width: 50%;
+}
+
+}
+
+
+@media screen and (min-width:1024px) {
+
+    .main-jugadas {
+        display: grid;
+        grid-template-areas:
+        "contenedores-videos1 contenedores-videos2"
+        "contenedores-videos3 contenedores-videos4";
+        gap: 1em;
+        margin-top: 1.2em;
+    }
+     
+    .contenedores-videos1 {
+        grid-area: contenedores-videos1;
+        justify-self: center;
+        background-color: rgb(161, 200, 233);
+        border: solid  rgb(53, 50, 50);
+        box-shadow: 6px 5px 5px black;
+        padding: 1em;
+        width: 100%;
+    }
+     
+    .contenedores-videos2 {
+        grid-area: contenedores-videos2;
+        justify-self: center;
+        background-color: rgb(161, 200, 233);
+        border: solid  rgb(53, 50, 50);
+        box-shadow: 6px 5px 5px black;
+        padding: 1em;
+        width: 100%;
+    }
+     
+    .contenedores-videos3 {
+        grid-area: contenedores-videos3;
+        justify-self: center;
+        background-color: rgb(161, 200, 233);
+        border: solid  rgb(53, 50, 50);
+        box-shadow: 6px 5px 5px black;
+        padding: 1em;
+        width: 100%;
+    }
+     
+    .contenedores-videos4 {
+        grid-area: contenedores-videos4;
+        justify-self: center;
+        background-color: rgb(161, 200, 233);
+        border: solid  rgb(53, 50, 50);
+        box-shadow: 6px 5px 5px black;
+        padding: 1em;
+        width: 100%;
+    }
+    
+}
