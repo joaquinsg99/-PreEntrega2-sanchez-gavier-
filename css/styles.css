@@ -144,6 +144,7 @@ header h2 {
     grid-template-areas: 
     "img titulo1 titulo2 titulo3"
     "img titulo4 titulo4 titulo4";
+    gap: 1em 1em;
     
   }
   
@@ -154,18 +155,30 @@ header h2 {
   .contenedor-titulo1 {
     grid-area: titulo1;
     justify-self: center; 
+    background-color: rgb(161, 200, 233);
+    border: solid  rgb(53, 50, 50);
+    box-shadow: 2px 2px 2px black;;
   }
   .contenedor-titulo2 {
     grid-area: titulo2;
     justify-self: center; 
+    background-color: rgb(161, 200, 233);
+    border: solid  rgb(53, 50, 50);
+    box-shadow: 2px 2px 2px black;;
   }
   .contenedor-titulo3 {
     grid-area: titulo3;
     justify-self: center; 
+    background-color: rgb(161, 200, 233);
+    border: solid  rgb(53, 50, 50);
+    box-shadow: 2px 2px 2px black;;
   }
   .contenedor-titulo4 {
     grid-area: titulo4;
     justify-self: center; 
+    background-color: rgb(161, 200, 233);
+    border: solid  rgb(53, 50, 50);
+    box-shadow: 2px 2px 2px black;;
   }
   main div h3 {
     text-align: center;
@@ -174,6 +187,8 @@ header h2 {
 footer input {
     margin-bottom: 2em;
     width: 50em;
+    margin-top: 1em;
+    margin-bottom: 3em;
 }
 
 
@@ -207,8 +222,8 @@ footer input {
     grid-area: text1;
     justify-self: center;
     text-align: center;
-    border: solid black;
-    box-shadow: 6px 5px 5px black;
+    border: solid rgb(53, 50, 50);
+    box-shadow: 4px 4px 4px black;
     background-color: rgb(161, 200, 233);
    
 }
@@ -216,8 +231,8 @@ footer input {
     grid-area: text2;
     justify-self: center;
     text-align: center;
-    border: solid black;
-    box-shadow: 6px 5px 5px black;;
+    border: solid rgb(53, 50, 50);
+    box-shadow: 4px 4px 4px black;;
     background-color: rgb(161, 200, 233);
     
     
@@ -226,7 +241,7 @@ footer input {
 .tittle1 {
     grid-area: tittle1;
     justify-self: center;
-    border: solid black;
+    border: solid  rgb(53, 50, 50);
     box-shadow: 6px 5px 5px black;;
     
 
@@ -234,7 +249,47 @@ footer input {
 .tittle2{
     grid-area: tittle2;
     justify-self: center;
-    border: solid black;
+    border: solid  rgb(53, 50, 50);
     box-shadow: 6px 5px 5px black;;
 }
+.ol-text {
+    margin-top: 0.6em;
+}
+
+/* estilos seleccion */
+
+.contenedor-seleccion {
+    display: grid;
+    grid-template-areas: 
+    "titulo-seleccion titulo-seleccion"
+    "img-seleccion ul-seleccion";
+}
+
+.titulo-seleccion {
+    grid-area: titulo-seleccion;   
+    justify-self: center;
+}
+.img-seleccion {
+   grid-area: img-seleccion;
+   justify-self: center;
+   width: 30em;
+}
+.ul-seleccion {
+    grid-area: ul-seleccion;
+    justify-self: center;
+    padding: 2em;
+    width: 30em;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: rgb(161, 200, 233);
+    border: solid  rgb(53, 50, 50);
+    box-shadow: 6px 5px 5px black;;
+
+}
+.footer-seleccion {
+   margin-top: 10em;
+}
+
+/* estilos mejores jugadas */
 
