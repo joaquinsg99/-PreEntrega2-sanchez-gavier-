@@ -143,6 +143,11 @@ header h2 {
     border: solid black;
     box-shadow: 6px 5px 5px black;;
     margin-top:  20px;
+    animation-name: img-latido;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse;
     }
  
    /*ESTILOS MAIN */
@@ -393,5 +398,7 @@ footer input {
         padding: 1em;
         width: 100%;
     }
+
+  
     
 }
