@@ -19,7 +19,7 @@ body {
  }
 
  header img {
-    width: 100px;
+    width: 4%;
     animation-name: img-latido;
 animation-iteration-count: infinite;
 animation-duration: 3s;
@@ -46,7 +46,7 @@ text-align: center;
 font-size: 60px;
 }
 main img {
- width: 25em;
+ width: 60%;
 align-self: center;
 }
 
@@ -147,7 +147,9 @@ header h2 {
     gap: 1em 1em;
     
   }
-  
+ .foto-bibliografia{
+    width: 80%;
+ }
   .contenedor-foto{
     grid-area: img;
     justify-self: center; 
@@ -207,13 +209,13 @@ footer input {
 }
  
 .foto-barcelona {
-    width: 15em;
+    width: 40%;
     grid-area: img1;
    align-items: center; 
     
 }
 .foto-psg {
-    width: 30em;
+    width: 50%;
     grid-area: img2;
     
 }
@@ -272,7 +274,7 @@ footer input {
 .img-seleccion {
    grid-area: img-seleccion;
    justify-self: center;
-   width: 30em;
+   width: 60%;
 }
 .ul-seleccion {
     grid-area: ul-seleccion;
