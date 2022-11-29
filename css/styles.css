@@ -100,6 +100,7 @@ footer {
     text-align: center; } }
 
 /*estilos bibliografia */
+/*estilos main*/
 header h2 {
   border: solid black;
   box-shadow: 6px 5px 5px black;
@@ -111,7 +112,6 @@ header h2 {
   animation-direction: alternate-reverse;
   font-size: 25px; }
 
-/*estilos main*/
 .contenedor-foto {
   display: flex;
   justify-content: center; }
@@ -119,6 +119,7 @@ header h2 {
 main div ul ol {
   text-align: start; }
 
+/*mq ceulares*/
 @media screen and (min-width: 600px) {
   .foto-bibliografia {
     width: 30%;
@@ -150,8 +151,10 @@ main div ul ol {
   footer input {
     margin-bottom: 2em;
     width: 50em;
-    margin-top: 1em; } }
+    margin-top: 1em;
+    text-align: center; } }
 
+/*mq deskop*/
 @media screen and (min-width: 1024px) {
   .main-biblio {
     margin-top: 1em;
@@ -175,3 +178,62 @@ main div ul ol {
   .contenedor-titulo4 {
     grid-area: titulo4;
     text-align: center; } }
+
+/* estilos clubes */
+/*estilos main*/
+/*mq ceulares*/
+@media screen and (min-width: 600px) {
+  .foto-barcelona {
+    width: 30%; }
+  .foto-psg {
+    width: 40%; }
+  .text1 {
+    text-align: center;
+    border: solid #353232;
+    box-shadow: 4px 4px 4px black;
+    background-color: #a1c8e9;
+    margin-top: 0.6em; }
+  .text2 {
+    text-align: center;
+    border: solid #353232;
+    box-shadow: 4px 4px 4px black;
+    background-color: #a1c8e9;
+    margin-top: 0.6em; }
+  .tittle1 {
+    border: solid #353232;
+    box-shadow: 6px 5px 5px black;
+    text-align: center; }
+  .tittle2 {
+    border: solid #353232;
+    box-shadow: 6px 5px 5px black;
+    text-align: center; } }
+
+/*mq deskop*/
+@media screen and (min-width: 1024px) {
+  .main-clubes {
+    margin-top: 0.8em;
+    display: grid;
+    grid-template-areas: "tittle1 tittle2" "img1 img2" "text1 text2";
+    gap: 1em 1em; }
+  .foto-barcelona {
+    width: 40%;
+    grid-area: img1;
+    align-items: center; }
+  .foto-psg {
+    width: 60%;
+    grid-area: img2; }
+  .text1 {
+    grid-area: text1;
+    justify-self: center; }
+  .text2 {
+    grid-area: text2;
+    justify-self: center; }
+  .tittle1 {
+    grid-area: tittle1;
+    justify-self: center;
+    width: 10em; }
+  .tittle2 {
+    grid-area: tittle2;
+    justify-self: center;
+    align-self: center;
+    width: 10em; } }

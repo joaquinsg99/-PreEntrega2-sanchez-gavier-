@@ -1,5 +1,5 @@
 /*estilos bibliografia */
- 
+    /*estilos main*/
 header h2 {
     border: solid black;
     box-shadow: 6px 5px 5px black;;
@@ -12,7 +12,7 @@ header h2 {
     font-size: 25px;
     }
 
-    /*estilos main*/
+ 
 
     .contenedor-foto {
         display: flex;
@@ -21,6 +21,7 @@ header h2 {
     main div ul ol {
         text-align: start;
     }
+    /*mq ceulares*/
     @media screen and (min-width:600px) {
 
     .foto-bibliografia{
@@ -62,11 +63,12 @@ header h2 {
         margin-bottom: 2em;
         width: 50em;
         margin-top: 1em;
+        text-align: center;
         
     }
 
 }
-
+/*mq deskop*/
 @media screen and (min-width:1024px) {
 
     .main-biblio{
@@ -107,6 +109,4 @@ header h2 {
         text-align: center ;
       }
     
-   
-
 }
