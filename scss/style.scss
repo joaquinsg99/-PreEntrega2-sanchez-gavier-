@@ -1,6 +1,144 @@
+
+
+/*reset*/
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
+
+body {
+    background-color: whitesmoke;
+}
+
+/* styles index */
+ header {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color:rgb(100, 139, 197);
+ }
+ 
+ header img {
+    width: 4%;
+    animation-name: img-latido;
+animation-iteration-count: infinite;
+animation-duration: 3s;
+animation-delay: 1s;
+animation-direction: alternate-reverse;
+ }
+ /* animacion header img*/
+ @keyframes img-latido {
+    0% {
+        transform: scale(1)
+    }
+    100%{
+        transform: scale(1.2);
+    }
+   
+}
+ /* styles main */
+main {
+    display: flex;
+    flex-direction: column;
+}
+main h1 {
+text-align: center;
+font-size: 40px;
+background-color: rgb(161, 200, 233);
+border: solid  rgb(53, 50, 50);
+box-shadow: 2px 2px 2px black;;
+margin-top: 0.1em;
+}
+ 
+ 
+ 
+main img {
+ width: 60%;
+align-self: center;
+}
+ 
+main p {
+display: none;
+}
+/*estilos footer*/
+footer {
+    display: none;
+}
+ 
+/* mq */
+ 
+@media screen and (min-width:600px){
+    /*estilos de footer */
+   
+ 
+footer {
+    display: block;
+    text-align: center;
+}
+footer h2 {
+    font-size: 20px;
+    margin-top: 1em;
+    border: solid 0.1em rgb(100, 139, 197) ;
+}
+ 
+footer ul li {
+    display: inline-block;
+    margin: 40px 0px 40px 0px;
+    padding: 10px;
+}
+ 
+ 
+footer ul li img {
+    width: 20px;
+}
+ 
+footer h3 {
+    font-size: 15px;
+    position: relative;
+    bottom: 3em;
+}
+ 
+.logo {
+    text-decoration: none;
+    color: black;
+   
+}
+ 
+}
+/* MQ */
+ 
+@media screen and (min-width:1024px){
+   /*estilos main*/
+    main {
+        display: grid;
+        grid-template-areas:
+        "h1 h1"
+        "img p"
+        ;
+       
+    }
+    main h1 {
+        grid-area: h1;
+    }
+    main img {
+        grid-area: img;
+        justify-self: center;
+    }
+    main p {
+        display: block;
+        border: dashed 1px  rgb(100, 139, 197) ;
+       width: 30em;
+        grid-area: p;
+        justify-self: center;
+        padding: 0.8em;
+        text-align: center;
+    }
+ 
+}
+
+// importando archivos (estilos con sass de las paginas complementarias)
+@import "estilos-paginas/style-bibliografia.scss"; 

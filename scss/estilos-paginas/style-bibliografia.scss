@@ -1,0 +1,112 @@
+/*estilos bibliografia */
+ 
+header h2 {
+    border: solid black;
+    box-shadow: 6px 5px 5px black;;
+    margin-top:  20px;
+    animation-name: img-latido;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse;
+    font-size: 25px;
+    }
+
+    /*estilos main*/
+
+    .contenedor-foto {
+        display: flex;
+       justify-content: center;
+    }
+    main div ul ol {
+        text-align: start;
+    }
+    @media screen and (min-width:600px) {
+
+    .foto-bibliografia{
+        width: 30%;
+        margin-top: 0.6em;
+        
+     }
+      .contenedor-titulo1 {
+        background-color: rgb(161, 200, 233);
+        border: solid  rgb(53, 50, 50);
+        box-shadow: 2px 2px 2px black;
+        text-align: center;
+        margin-top: 0.6em;
+      }
+      .contenedor-titulo2 {
+        background-color: rgb(161, 200, 233);
+        border: solid  rgb(53, 50, 50);
+        box-shadow: 2px 2px 2px black;
+        text-align: center;
+        margin-top: 0.6em;
+
+      }
+      .contenedor-titulo3 {
+        background-color: rgb(161, 200, 233);
+        border: solid  rgb(53, 50, 50);
+        box-shadow: 2px 2px 2px black;
+        text-align: center;
+        margin-top: 0.6em;
+      }
+      .contenedor-titulo4 {
+        background-color: rgb(161, 200, 233);
+        border: solid  rgb(53, 50, 50);
+        box-shadow: 2px 2px 2px black;
+        text-align: center;
+        margin-top: 0.6em;
+      }
+      
+    footer input {
+        margin-bottom: 2em;
+        width: 50em;
+        margin-top: 1em;
+        
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+
+    .main-biblio{
+        margin-top: 1em;
+        display:grid;
+        grid-template-areas:
+        "img titulo1 titulo2 titulo3"
+        "img titulo4 titulo4 titulo4";
+        gap: 1em 1em;
+    }
+    .foto-bibliografia{
+        width: 80%;
+        margin-left: 0.8em;
+     }
+    .contenedor-foto{
+        grid-area: img;
+        justify-self: center;
+      }
+      .contenedor-titulo1 {
+        grid-area: titulo1;
+    
+        
+      }
+      .contenedor-titulo2 {
+        grid-area: titulo2;
+        text-align: center ;
+       
+      }
+      .contenedor-titulo3 {
+        grid-area: titulo3;
+        
+        text-align: center;
+       
+      }
+      .contenedor-titulo4 {
+        grid-area: titulo4;
+        
+        text-align: center ;
+      }
+    
+   
+
+}
