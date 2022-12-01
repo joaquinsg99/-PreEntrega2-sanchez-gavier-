@@ -20,16 +20,17 @@ body {
     align-items: center;
     flex-wrap: nowrap;
     background-color:rgb(100, 139, 197);
+    img {
+        width: 4%;
+        animation-name: img-latido;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse;
+     }
  }
- 
- header img {
-    width: 4%;
-    animation-name: img-latido;
-animation-iteration-count: infinite;
-animation-duration: 3s;
-animation-delay: 1s;
-animation-direction: alternate-reverse;
- }
+
+
  /* animacion header img*/
  @keyframes img-latido {
     0% {
@@ -44,26 +45,23 @@ animation-direction: alternate-reverse;
 main {
     display: flex;
     flex-direction: column;
+    h1 {
+        text-align: center;
+        font-size: 40px;
+        background-color: rgb(161, 200, 233);
+        border: solid  rgb(53, 50, 50);
+        box-shadow: 2px 2px 2px black;;
+        margin-top: 0.1em;
+        }
+        img {
+            width: 60%;
+           align-self: center;
+           }
+            p {
+            display: none;
+            }
 }
-main h1 {
-text-align: center;
-font-size: 40px;
-background-color: rgb(161, 200, 233);
-border: solid  rgb(53, 50, 50);
-box-shadow: 2px 2px 2px black;;
-margin-top: 0.1em;
-}
- 
- 
- 
-main img {
- width: 60%;
-align-self: center;
-}
- 
-main p {
-display: none;
-}
+
 /*estilos footer*/
 footer {
     display: none;
@@ -78,36 +76,38 @@ footer {
 footer {
     display: block;
     text-align: center;
+
+    h2 {
+        font-size: 20px;
+        margin-top: 1em;
+        border: solid 0.1em rgb(100, 139, 197) ;
+    }
+    ul {
+
+    
+    li {
+        display: inline-block;
+        margin: 40px 0px 40px 0px;
+        padding: 10px;
+    }
+    img {
+        width: 20px;
+    }
+   
 }
-footer h2 {
-    font-size: 20px;
-    margin-top: 1em;
-    border: solid 0.1em rgb(100, 139, 197) ;
-}
- 
-footer ul li {
-    display: inline-block;
-    margin: 40px 0px 40px 0px;
-    padding: 10px;
-}
- 
- 
-footer ul li img {
-    width: 20px;
-}
- 
-footer h3 {
+h3 {
     font-size: 15px;
     position: relative;
     bottom: 3em;
 }
- 
+}
+
+
 .logo {
     text-decoration: none;
     color: black;
    
 }
- 
 }
 /* MQ */
  
@@ -119,27 +119,29 @@ footer h3 {
         "h1 h1"
         "img p"
         ;
-       
+        h1 {
+            grid-area: h1;
+        }
+        img {
+            grid-area: img;
+            justify-self: center;
+        }
+        p {
+            display: block;
+            border: dashed 1px  rgb(100, 139, 197) ;
+           width: 30em;
+            grid-area: p;
+            justify-self: center;
+            padding: 0.8em;
+            text-align: center;
+        }
     }
-    main h1 {
-        grid-area: h1;
-    }
-    main img {
-        grid-area: img;
-        justify-self: center;
-    }
-    main p {
-        display: block;
-        border: dashed 1px  rgb(100, 139, 197) ;
-       width: 30em;
-        grid-area: p;
-        justify-self: center;
-        padding: 0.8em;
-        text-align: center;
-    }
+    
  
 }
 
 // importando archivos (estilos con sass de las paginas complementarias)
 @import "estilos-paginas/style-bibliografia.scss"; 
-@import "estilos-paginas/style-clubes.scss"
+@import "estilos-paginas/style-clubes.scss";
+@import "estilos-paginas/syle-seleccion.scss";
+@import "estilos-paginas/styles-mejores-jgs.scss"

@@ -1,0 +1,66 @@
+/* estilos seleccion */
+/*mq celulares*/
+@media screen and (min-width:600px){
+    .contenedor-seleccion{
+        .titulo-seleccion {           
+            border: solid  rgb(53, 50, 50);
+            box-shadow: 6px 5px 5px black;;
+            margin-top: 0.5em;
+            background-color: rgb(161, 200, 233);
+            text-align: center;
+        }
+        .img-seleccion {
+            
+            width: 60%;
+            margin-top: 0.5em;
+         }
+         .ul-seleccion {          
+            background-color: rgb(161, 200, 233);
+            border: solid  rgb(53, 50, 50);
+            box-shadow: 6px 5px 5px black;;
+            text-align: center;
+            margin-top: 0.5em;
+            ol {
+                margin-top: 0.5em;
+            }
+         
+        }  
+
+
+    }
+    .footer-seleccion {
+        margin-top: 10em;
+     }
+     
+ }
+
+
+ /* MQ deskopt */
+ 
+@media screen and (min-width:1024px){
+    .contenedor-seleccion {
+        display: grid;
+        grid-template-areas:
+        "titulo-seleccion titulo-seleccion"
+        "img-seleccion ul-seleccion";
+
+        .titulo-seleccion {
+            grid-area: titulo-seleccion;  
+            justify-self: center; 
+        }
+        .img-seleccion {
+            grid-area: img-seleccion;
+            justify-self: center;}
+
+            .ul-seleccion {
+                grid-area: ul-seleccion;
+                justify-self: center;
+                padding: 1em;
+                width: 60em;
+            }
+
+    }
+    
+}
+
+

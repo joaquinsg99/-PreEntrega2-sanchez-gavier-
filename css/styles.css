@@ -15,14 +15,13 @@ header {
   align-items: center;
   flex-wrap: nowrap;
   background-color: #648bc5; }
-
-header img {
-  width: 4%;
-  animation-name: img-latido;
-  animation-iteration-count: infinite;
-  animation-duration: 3s;
-  animation-delay: 1s;
-  animation-direction: alternate-reverse; }
+  header img {
+    width: 4%;
+    animation-name: img-latido;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-direction: alternate-reverse; }
 
 /* animacion header img*/
 @keyframes img-latido {
@@ -35,21 +34,18 @@ header img {
 main {
   display: flex;
   flex-direction: column; }
-
-main h1 {
-  text-align: center;
-  font-size: 40px;
-  background-color: #a1c8e9;
-  border: solid #353232;
-  box-shadow: 2px 2px 2px black;
-  margin-top: 0.1em; }
-
-main img {
-  width: 60%;
-  align-self: center; }
-
-main p {
-  display: none; }
+  main h1 {
+    text-align: center;
+    font-size: 40px;
+    background-color: #a1c8e9;
+    border: solid #353232;
+    box-shadow: 2px 2px 2px black;
+    margin-top: 0.1em; }
+  main img {
+    width: 60%;
+    align-self: center; }
+  main p {
+    display: none; }
 
 /*estilos footer*/
 footer {
@@ -61,20 +57,20 @@ footer {
   footer {
     display: block;
     text-align: center; }
-  footer h2 {
-    font-size: 20px;
-    margin-top: 1em;
-    border: solid 0.1em #648bc5; }
-  footer ul li {
-    display: inline-block;
-    margin: 40px 0px 40px 0px;
-    padding: 10px; }
-  footer ul li img {
-    width: 20px; }
-  footer h3 {
-    font-size: 15px;
-    position: relative;
-    bottom: 3em; }
+    footer h2 {
+      font-size: 20px;
+      margin-top: 1em;
+      border: solid 0.1em #648bc5; }
+    footer ul li {
+      display: inline-block;
+      margin: 40px 0px 40px 0px;
+      padding: 10px; }
+    footer ul img {
+      width: 20px; }
+    footer h3 {
+      font-size: 15px;
+      position: relative;
+      bottom: 3em; }
   .logo {
     text-decoration: none;
     color: black; } }
@@ -85,19 +81,19 @@ footer {
   main {
     display: grid;
     grid-template-areas: "h1 h1" "img p"; }
-  main h1 {
-    grid-area: h1; }
-  main img {
-    grid-area: img;
-    justify-self: center; }
-  main p {
-    display: block;
-    border: dashed 1px #648bc5;
-    width: 30em;
-    grid-area: p;
-    justify-self: center;
-    padding: 0.8em;
-    text-align: center; } }
+    main h1 {
+      grid-area: h1; }
+    main img {
+      grid-area: img;
+      justify-self: center; }
+    main p {
+      display: block;
+      border: dashed 1px #648bc5;
+      width: 30em;
+      grid-area: p;
+      justify-self: center;
+      padding: 0.8em;
+      text-align: center; } }
 
 /*estilos bibliografia */
 /*estilos main*/
@@ -112,7 +108,7 @@ header h2 {
   animation-direction: alternate-reverse;
   font-size: 25px; }
 
-.contenedor-foto {
+main .contenedor-foto {
   display: flex;
   justify-content: center; }
 
@@ -121,28 +117,28 @@ main div ul ol {
 
 /*mq ceulares*/
 @media screen and (min-width: 600px) {
-  .foto-bibliografia {
+  .main-biblio .foto-bibliografia {
     width: 30%;
     margin-top: 0.6em; }
-  .contenedor-titulo1 {
+  .main-biblio .contenedor-titulo1 {
     background-color: #a1c8e9;
     border: solid #353232;
     box-shadow: 2px 2px 2px black;
     text-align: center;
     margin-top: 0.6em; }
-  .contenedor-titulo2 {
+  .main-biblio .contenedor-titulo2 {
     background-color: #a1c8e9;
     border: solid #353232;
     box-shadow: 2px 2px 2px black;
     text-align: center;
     margin-top: 0.6em; }
-  .contenedor-titulo3 {
+  .main-biblio .contenedor-titulo3 {
     background-color: #a1c8e9;
     border: solid #353232;
     box-shadow: 2px 2px 2px black;
     text-align: center;
     margin-top: 0.6em; }
-  .contenedor-titulo4 {
+  .main-biblio .contenedor-titulo4 {
     background-color: #a1c8e9;
     border: solid #353232;
     box-shadow: 2px 2px 2px black;
@@ -161,49 +157,49 @@ main div ul ol {
     display: grid;
     grid-template-areas: "img titulo1 titulo2 titulo3" "img titulo4 titulo4 titulo4";
     gap: 1em 1em; }
-  .foto-bibliografia {
-    width: 80%;
-    margin-left: 0.8em; }
-  .contenedor-foto {
-    grid-area: img;
-    justify-self: center; }
-  .contenedor-titulo1 {
-    grid-area: titulo1; }
-  .contenedor-titulo2 {
-    grid-area: titulo2;
-    text-align: center; }
-  .contenedor-titulo3 {
-    grid-area: titulo3;
-    text-align: center; }
-  .contenedor-titulo4 {
-    grid-area: titulo4;
-    text-align: center; } }
+    .main-biblio .foto-bibliografia {
+      width: 80%;
+      margin-left: 0.8em; }
+    .main-biblio .contenedor-foto {
+      grid-area: img;
+      justify-self: center; }
+    .main-biblio .contenedor-titulo1 {
+      grid-area: titulo1; }
+    .main-biblio .contenedor-titulo2 {
+      grid-area: titulo2;
+      text-align: center; }
+    .main-biblio .contenedor-titulo3 {
+      grid-area: titulo3;
+      text-align: center; }
+    .main-biblio .contenedor-titulo4 {
+      grid-area: titulo4;
+      text-align: center; } }
 
 /* estilos clubes */
 /*estilos main*/
 /*mq ceulares*/
 @media screen and (min-width: 600px) {
-  .foto-barcelona {
+  .main-clubes .foto-barcelona {
     width: 30%; }
-  .foto-psg {
+  .main-clubes .foto-psg {
     width: 40%; }
-  .text1 {
+  .main-clubes .text1 {
     text-align: center;
     border: solid #353232;
     box-shadow: 4px 4px 4px black;
     background-color: #a1c8e9;
     margin-top: 0.6em; }
-  .text2 {
+  .main-clubes .text2 {
     text-align: center;
     border: solid #353232;
     box-shadow: 4px 4px 4px black;
     background-color: #a1c8e9;
     margin-top: 0.6em; }
-  .tittle1 {
+  .main-clubes .tittle1 {
     border: solid #353232;
     box-shadow: 6px 5px 5px black;
     text-align: center; }
-  .tittle2 {
+  .main-clubes .tittle2 {
     border: solid #353232;
     box-shadow: 6px 5px 5px black;
     text-align: center; } }
@@ -215,25 +211,130 @@ main div ul ol {
     display: grid;
     grid-template-areas: "tittle1 tittle2" "img1 img2" "text1 text2";
     gap: 1em 1em; }
-  .foto-barcelona {
-    width: 40%;
-    grid-area: img1;
-    align-items: center; }
-  .foto-psg {
+    .main-clubes .foto-barcelona {
+      width: 40%;
+      grid-area: img1;
+      align-items: center; }
+    .main-clubes .foto-psg {
+      width: 60%;
+      grid-area: img2; }
+    .main-clubes .text1 {
+      grid-area: text1;
+      justify-self: center; }
+    .main-clubes .text2 {
+      grid-area: text2;
+      justify-self: center; }
+    .main-clubes .tittle1 {
+      grid-area: tittle1;
+      justify-self: center;
+      width: 10em; }
+    .main-clubes .tittle2 {
+      grid-area: tittle2;
+      justify-self: center;
+      align-self: center;
+      width: 10em; } }
+
+/* estilos seleccion */
+/*mq celulares*/
+@media screen and (min-width: 600px) {
+  .contenedor-seleccion .titulo-seleccion {
+    border: solid #353232;
+    box-shadow: 6px 5px 5px black;
+    margin-top: 0.5em;
+    background-color: #a1c8e9;
+    text-align: center; }
+  .contenedor-seleccion .img-seleccion {
     width: 60%;
-    grid-area: img2; }
-  .text1 {
-    grid-area: text1;
-    justify-self: center; }
-  .text2 {
-    grid-area: text2;
-    justify-self: center; }
-  .tittle1 {
-    grid-area: tittle1;
-    justify-self: center;
-    width: 10em; }
-  .tittle2 {
-    grid-area: tittle2;
-    justify-self: center;
-    align-self: center;
-    width: 10em; } }
+    margin-top: 0.5em; }
+  .contenedor-seleccion .ul-seleccion {
+    background-color: #a1c8e9;
+    border: solid #353232;
+    box-shadow: 6px 5px 5px black;
+    text-align: center;
+    margin-top: 0.5em; }
+    .contenedor-seleccion .ul-seleccion ol {
+      margin-top: 0.5em; }
+  .footer-seleccion {
+    margin-top: 10em; } }
+
+/* MQ deskopt */
+@media screen and (min-width: 1024px) {
+  .contenedor-seleccion {
+    display: grid;
+    grid-template-areas: "titulo-seleccion titulo-seleccion" "img-seleccion ul-seleccion"; }
+    .contenedor-seleccion .titulo-seleccion {
+      grid-area: titulo-seleccion;
+      justify-self: center; }
+    .contenedor-seleccion .img-seleccion {
+      grid-area: img-seleccion;
+      justify-self: center; }
+    .contenedor-seleccion .ul-seleccion {
+      grid-area: ul-seleccion;
+      justify-self: center;
+      padding: 1em;
+      width: 60em; } }
+
+/* estilos mejores jugadas */
+.main-jugadas {
+  display: flex;
+  align-items: center; }
+
+.titulos-jugadas {
+  display: none; }
+
+/* MQ */
+@media screen and (min-width: 600px) {
+  .main-jugadas .titulos-jugadas {
+    display: block;
+    text-align: center;
+    border: solid #353232;
+    box-shadow: 6px 5px 5px black;
+    background-color: whitesmoke;
+    margin-top: 0.5em; }
+  .main-jugadas .contenedores-videos1 {
+    width: 50%; }
+  .main-jugadas .contenedores-videos2 {
+    width: 50%; }
+  .main-jugadas .contenedores-videos3 {
+    width: 50%; }
+  .main-jugadas .contenedores-videos4 {
+    width: 50%; } }
+
+@media screen and (min-width: 1024px) {
+  .main-jugadas {
+    display: grid;
+    grid-template-areas: "contenedores-videos1 contenedores-videos2" "contenedores-videos3 contenedores-videos4";
+    gap: 1em;
+    margin-top: 1.2em; }
+    .main-jugadas .contenedores-videos1 {
+      grid-area: contenedores-videos1;
+      justify-self: center;
+      background-color: #a1c8e9;
+      border: solid #353232;
+      box-shadow: 6px 5px 5px black;
+      padding: 1em;
+      width: 100%; }
+    .main-jugadas .contenedores-videos2 {
+      grid-area: contenedores-videos2;
+      justify-self: center;
+      background-color: #a1c8e9;
+      border: solid #353232;
+      box-shadow: 6px 5px 5px black;
+      padding: 1em;
+      width: 100%; }
+    .main-jugadas .contenedores-videos3 {
+      grid-area: contenedores-videos3;
+      justify-self: center;
+      background-color: #a1c8e9;
+      border: solid #353232;
+      box-shadow: 6px 5px 5px black;
+      padding: 1em;
+      width: 100%; }
+    .main-jugadas .contenedores-videos4 {
+      grid-area: contenedores-videos4;
+      justify-self: center;
+      background-color: #a1c8e9;
+      border: solid #353232;
+      box-shadow: 6px 5px 5px black;
+      padding: 1em;
+      width: 100%; } }

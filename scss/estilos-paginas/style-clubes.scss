@@ -5,7 +5,8 @@
 
 
 @media screen and (min-width:600px) {
-
+    .main-clubes{ 
+    
 .foto-barcelona {
     width: 30%
 }
@@ -43,6 +44,7 @@
     text-align: center;
     
 }
+    }
 }
 
 /*mq deskop*/
@@ -56,44 +58,45 @@
         "img1 img2"
         "text1 text2" ;
         gap: 1em 1em;
+        .foto-barcelona {
+            width: 40%;
+            grid-area: img1;
+           align-items: center;
+           
+        }
+        .foto-psg {
+            width: 60%;
+            grid-area: img2;
+            
+           
+        }
+           
+        .text1{
+            grid-area: text1;
+            justify-self: center;
+        
+        }
+        .text2{
+            grid-area: text2;
+            justify-self: center;    
+        }
+         
+        .tittle1 {
+            grid-area: tittle1;
+            justify-self: center;
+            width: 10em;
+         
+        }
+        .tittle2{
+            grid-area: tittle2;
+            justify-self: center;
+            align-self: center;
+            width: 10em;
+        }
          
     }
      
-    .foto-barcelona {
-        width: 40%;
-        grid-area: img1;
-       align-items: center;
-       
-    }
-    .foto-psg {
-        width: 60%;
-        grid-area: img2;
-        
-       
-    }
-       
-    .text1{
-        grid-area: text1;
-        justify-self: center;
     
-    }
-    .text2{
-        grid-area: text2;
-        justify-self: center;    
-    }
-     
-    .tittle1 {
-        grid-area: tittle1;
-        justify-self: center;
-        width: 10em;
-     
-    }
-    .tittle2{
-        grid-area: tittle2;
-        justify-self: center;
-        align-self: center;
-        width: 10em;
-    }
     
 
 
