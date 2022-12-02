@@ -16,8 +16,7 @@
     .titulos-jugadas {
         display: block;
         text-align: center;
-        border: solid #353232;
-        box-shadow: 6px 5px 5px black;
+        @include estilosBorders;
         background-color: whitesmoke;
         margin-top: 0.5em;
        
@@ -57,9 +56,8 @@
     .contenedores-videos1 {
         grid-area: contenedores-videos1;
         justify-self: center;
-        background-color: rgb(161, 200, 233);
-        border: solid  rgb(53, 50, 50);
-        box-shadow: 6px 5px 5px black;
+        background-color: $color-fondo;
+        @include estilosBorders;
         padding: 1em;
         width: 100%;
     }
@@ -67,9 +65,8 @@
     .contenedores-videos2 {
         grid-area: contenedores-videos2;
         justify-self: center;
-        background-color: rgb(161, 200, 233);
-        border: solid  rgb(53, 50, 50);
-        box-shadow: 6px 5px 5px black;
+        background-color: $color-fondo;
+        @include estilosBorders;
         padding: 1em;
         width: 100%;
     }
@@ -77,9 +74,8 @@
     .contenedores-videos3 {
         grid-area: contenedores-videos3;
         justify-self: center;
-        background-color: rgb(161, 200, 233);
-        border: solid  rgb(53, 50, 50);
-        box-shadow: 6px 5px 5px black;
+        background-color:$color-fondo;
+        @include estilosBorders;
         padding: 1em;
         width: 100%;
     }
@@ -88,9 +84,8 @@
     .contenedores-videos4 {
         grid-area: contenedores-videos4;
         justify-self: center;
-        background-color: rgb(161, 200, 233);
-        border: solid  rgb(53, 50, 50);
-        box-shadow: 6px 5px 5px black;
+        background-color:$color-fondo;
+        @include estilosBorders;
         padding: 1em;
         width: 100%;
     }

@@ -3,10 +3,9 @@
 @media screen and (min-width:600px){
     .contenedor-seleccion{
         .titulo-seleccion {           
-            border: solid  rgb(53, 50, 50);
-            box-shadow: 6px 5px 5px black;;
+            @include estilosBorders;
             margin-top: 0.5em;
-            background-color: rgb(161, 200, 233);
+            background-color: $color-fondo;
             text-align: center;
         }
         .img-seleccion {
@@ -15,9 +14,8 @@
             margin-top: 0.5em;
          }
          .ul-seleccion {          
-            background-color: rgb(161, 200, 233);
-            border: solid  rgb(53, 50, 50);
-            box-shadow: 6px 5px 5px black;;
+            background-color: $color-fondo;
+            @include estilosBorders;
             text-align: center;
             margin-top: 0.5em;
             ol {

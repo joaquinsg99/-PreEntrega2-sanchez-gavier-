@@ -1,4 +1,7 @@
-
+// importando utilidades 
+@import "utilidades/mixin.scss";
+@import "utilidades/variables.scss";
+@import "utilidades/extend.scss";
 
 /*reset*/
 * {
@@ -19,14 +22,11 @@ body {
     flex-direction: column;
     align-items: center;
     flex-wrap: nowrap;
-    background-color:rgb(100, 139, 197);
+    background-color:$color-fondo;
     img {
         width: 4%;
         animation-name: img-latido;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-    animation-delay: 1s;
-    animation-direction: alternate-reverse;
+       @extend %estilosAnimacion;
      }
  }
 
@@ -48,10 +48,9 @@ main {
     h1 {
         text-align: center;
         font-size: 40px;
-        background-color: rgb(161, 200, 233);
-        border: solid  rgb(53, 50, 50);
-        box-shadow: 2px 2px 2px black;;
         margin-top: 0.1em;
+        background-color:$color-fondo; 
+        @include estilosBorders;
         }
         img {
             width: 60%;
@@ -80,7 +79,7 @@ footer {
     h2 {
         font-size: 20px;
         margin-top: 1em;
-        border: solid 0.1em rgb(100, 139, 197) ;
+        border: solid 0.1em $color-fondo ;
     }
     ul {
 
@@ -128,7 +127,7 @@ h3 {
         }
         p {
             display: block;
-            border: dashed 1px  rgb(100, 139, 197) ;
+            border: dashed 1px  $color-fondo ;
            width: 30em;
             grid-area: p;
             justify-self: center;

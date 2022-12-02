@@ -5,10 +5,7 @@ header h2 {
     box-shadow: 6px 5px 5px black;;
     margin-top:  20px;
     animation-name: img-latido;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-    animation-delay: 1s;
-    animation-direction: alternate-reverse;
+    @extend %estilosAnimacion;
     font-size: 25px;
     }
 
@@ -38,33 +35,32 @@ header h2 {
     
  }
  .contenedor-titulo1 {
-  background-color: rgb(161, 200, 233);
-  border: solid  rgb(53, 50, 50);
-  box-shadow: 2px 2px 2px black;
+  background-color: $color-fondo;
   text-align: center;
-  margin-top: 0.6em;
+    margin-top: 0.6em;
+  @include estilosBorders;
+  
 }
 .contenedor-titulo2 {
-  background-color: rgb(161, 200, 233);
-  border: solid  rgb(53, 50, 50);
-  box-shadow: 2px 2px 2px black;
+  background-color: $color-fondo;
+  @include estilosBorders;
   text-align: center;
   margin-top: 0.6em;
 }
 
 .contenedor-titulo3 {
-  background-color: rgb(161, 200, 233);
-  border: solid  rgb(53, 50, 50);
-  box-shadow: 2px 2px 2px black;
+  background-color: $color-fondo;
   text-align: center;
-  margin-top: 0.6em;
+    margin-top: 0.6em;
+  @include estilosBorders;
+ 
 }
 .contenedor-titulo4 {
-  background-color: rgb(161, 200, 233);
-  border: solid  rgb(53, 50, 50);
-  box-shadow: 2px 2px 2px black;
+  background-color: $color-fondo;
+
+  @include estilosBorders;
   text-align: center;
-  margin-top: 0.6em;
+    margin-top: 0.6em;
 }
 
 }

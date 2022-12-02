@@ -3,7 +3,6 @@
 /*estilos main*/
 /*mq ceulares*/
 
-
 @media screen and (min-width:600px) {
     .main-clubes{ 
     
@@ -11,36 +10,30 @@
     width: 30%
 }
 .foto-psg {
-    width: 40%;  
+    width: 40%; 
 }
 .text1{
-    text-align: center;
-    border: solid rgb(53, 50, 50);
-    box-shadow: 4px 4px 4px black;
-    background-color: rgb(161, 200, 233);
-    margin-top: 0.6em;
-
+    @include estilosBorders;
+    background-color: $color-fondo;
+   
 }
 .text2{
     text-align: center;
-    border: solid rgb(53, 50, 50);
-    box-shadow: 4px 4px 4px black;;
-    background-color: rgb(161, 200, 233);
+    @include estilosBorders;
+    background-color: $color-fondo;
     margin-top: 0.6em;
     
     
 }
 
 .tittle1 {
-    border: solid  rgb(53, 50, 50);
-    box-shadow: 6px 5px 5px black;
+    @include estilosBorders;
     text-align: center;
    
     
 }
 .tittle2 {
-    border: solid  rgb(53, 50, 50);
-    box-shadow: 6px 5px 5px black;
+    @include estilosBorders;
     text-align: center;
     
 }
