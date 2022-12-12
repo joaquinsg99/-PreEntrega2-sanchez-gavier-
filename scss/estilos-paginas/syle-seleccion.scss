@@ -1,36 +1,85 @@
 /* estilos seleccion */
 /*mq celulares*/
-@media screen and (min-width:600px){
-    .contenedor-seleccion{
-        .titulo-seleccion {           
-            @include estilosBorders;
+.contenedor-seleccion{
+    .titulo-seleccion {           
+        @include estilosBorders;
+        margin-top: 0.5em;
+        background-color: $color-fondo;
+        text-align: center;
+    }
+    .img-seleccion {
+        
+        width: 60%;
+        margin-top: 0.5em;
+     }
+     .ul-seleccion {          
+        background-color: $color-fondo;
+        @include estilosBorders;
+        text-align: center;
+        margin-top: 0.5em;
+        ol {
             margin-top: 0.5em;
-            background-color: $color-fondo;
-            text-align: center;
         }
+     
+    }  
+
+
+}
+.footer-seleccion {
+    margin-top: 10em;
+
+ }
+ 
+
+
+@media screen and (min-width:400px) and (max-width:799px){
+    .contenedor-seleccion{
+        display: flex;
+    
+      
         .img-seleccion {
             
-            width: 60%;
-            margin-top: 0.5em;
+            width: 70%;
+            
          }
-         .ul-seleccion {          
-            background-color: $color-fondo;
-            @include estilosBorders;
-            text-align: center;
-            margin-top: 0.5em;
-            ol {
-                margin-top: 0.5em;
-            }
-         
-        }  
-
-
     }
+
+    
     .footer-seleccion {
         margin-top: 10em;
      }
      
  }
+
+
+/*mq tablet*/
+@media screen and (min-width:800px) and (max-width:1023px) {
+    .contenedor-seleccion {
+        display: grid;
+        grid-template-areas:
+        "titulo-seleccion titulo-seleccion"
+        "img-seleccion  ul-seleccion";
+
+        .titulo-seleccion {
+            grid-area: titulo-seleccion;  
+            justify-self: center; 
+        }
+        .img-seleccion {
+            grid-area: img-seleccion;
+            justify-self: center;}
+
+            .ul-seleccion {
+                grid-area: ul-seleccion;
+                justify-self: center;
+                padding: 1em;
+                width: 25em;
+            }
+
+    }
+    .footer-seleccion {
+        margin-top: 3em;
+     }
+}
 
 
  /* MQ deskopt */

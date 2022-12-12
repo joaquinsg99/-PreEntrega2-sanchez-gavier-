@@ -23,12 +23,8 @@ header h2 {
 }
 
  }
-
-    
-   
-    /*mq ceulares*/
-    @media screen and (min-width:600px) {
-.main-biblio {
+ .main-biblio {
+  
   .foto-bibliografia{
     width: 30%;
     margin-top: 0.6em;
@@ -68,13 +64,98 @@ header h2 {
       
     footer input {
         margin-bottom: 2em;
-        width: 50em;
+        width: 20em;
         margin-top: 1em;
         text-align: center;
         
     }
 
+
+    
+   
+    /*mq ceulares*/
+    @media screen and (min-width:400px) and (max-width:799px){
+    
+       .main-biblio {
+        display: flex;
+        flex-direction: column;
+       }
+      .contenedor-titulo1 {
+        width: 35em;
+       align-self: center;
+
+      }
+    
+      .contenedor-titulo2 {
+        width: 35em;
+       align-self: center;
+
+      }
+      .contenedor-titulo3 {
+        width: 35em;
+       align-self: center;
+
+      }
+      .contenedor-titulo4 {
+        width: 35em;
+       align-self: center;
+
+      }
+
+
+
 }
+
+
+/*mq tablet*/
+@media screen and (min-width:800px) and (max-width:1023px){
+  .main-biblio{
+        margin-top: 1em;
+        display:grid;
+        grid-template-areas:
+        "img img img titulo1 titulo2 titulo3"
+        "img img img titulo4 titulo4 titulo4";
+        gap: 1em 1em;
+       
+        .foto-bibliografia{
+          width: 80%;
+          margin-left: 0.8em;
+       }
+      .contenedor-foto{
+          grid-area: img;
+          justify-self: center;
+        
+        }
+        .contenedor-titulo1 {
+          grid-area: titulo1; 
+         
+         
+          
+        }
+        .contenedor-titulo2 {
+          grid-area: titulo2;
+          text-align: center ;
+         
+         
+        }
+        .contenedor-titulo3 {
+          grid-area: titulo3;
+         
+          text-align: center;
+         
+        }
+        .contenedor-titulo4 {
+          grid-area: titulo4;
+          
+          text-align: center ;
+        }
+    }
+}
+
+
+
+
+
 /*mq deskop*/
 @media screen and (min-width:1024px) {
 
@@ -82,8 +163,8 @@ header h2 {
         margin-top: 1em;
         display:grid;
         grid-template-areas:
-        "img titulo1 titulo2 titulo3"
-        "img titulo4 titulo4 titulo4";
+        "img img img titulo1 titulo2 titulo3"
+        "img img img titulo4 titulo4 titulo4";
         gap: 1em 1em;
         .foto-bibliografia{
           width: 80%;

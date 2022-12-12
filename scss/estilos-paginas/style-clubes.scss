@@ -1,44 +1,119 @@
 /* estilos clubes */
  
 /*estilos main*/
-/*mq ceulares*/
 
-@media screen and (min-width:600px) {
-    .main-clubes{ 
+.main-clubes {
+    .text1{
+        @include estilosBorders;
+        background-color: $color-fondo;
+       
+    }
+    .text2{
+        text-align: center;
+        @include estilosBorders;
+        background-color: $color-fondo;
+        margin-top: 0.6em;
+        
+        
+    }
+    
+    .tittle1 {
+        @include estilosBorders;
+        text-align: center;
+       
+        
+    }
+    .tittle2 {
+        @include estilosBorders;
+        text-align: center;
+        
+    }
+}
+/*estilos footer*/
+.input-clubes {
+    width: 30em;
+}
+/*mq ceulares*/
+@media screen  and (min-width:400px) and (max-width: 799px) {
+.main-clubes{ 
+        display: flex;
+        
+            .text1{
+                padding: 1em;
+               
+            }
+            .text2 {
+                padding: 1em;
+            }
+        }
     
 .foto-barcelona {
     width: 30%
 }
 .foto-psg {
-    width: 40%; 
+    width: 50%; 
 }
-.text1{
-    @include estilosBorders;
-    background-color: $color-fondo;
-   
-}
-.text2{
-    text-align: center;
-    @include estilosBorders;
-    background-color: $color-fondo;
-    margin-top: 0.6em;
-    
-    
+ 
 }
 
-.tittle1 {
-    @include estilosBorders;
-    text-align: center;
-   
-    
-}
-.tittle2 {
-    @include estilosBorders;
-    text-align: center;
-    
-}
+
+       
+
+/*mq tablet*/
+@media screen  and (min-width:800px) and (max-width: 1023px) {
+    .main-clubes {
+        margin-top: 0.8em;
+        display: grid;
+        grid-template-areas:
+        "tittle1 tittle2"
+        "img1 img2"
+        "text1 text2" ;
+        gap: 1em 1em;
+        .foto-barcelona {
+            width: 40%;
+            grid-area: img1;
+           align-items: center;
+           
+           
+        }
+        .foto-psg {
+            width: 60%;
+            grid-area: img2;
+            
+           
+        }
+           
+        .text1{
+            grid-area: text1;
+            justify-self: center;
+            text-align: center;
+            padding: 1em;
+        
+        }
+        .text2{
+            grid-area: text2;
+            justify-self: center;   
+            text-align: center; 
+            padding: 1em;
+        }
+         
+        .tittle1 {
+            grid-area: tittle1;
+            justify-self: center;
+            width: 10em;
+         
+        }
+        .tittle2{
+            grid-area: tittle2;
+            justify-self: center;
+            align-self: center;
+            width: 10em;
+        }
+         
     }
+
 }
+
 
 /*mq deskop*/
 @media screen and (min-width:1024px) {
@@ -67,17 +142,20 @@
         .text1{
             grid-area: text1;
             justify-self: center;
+            padding: 1em;
         
         }
         .text2{
             grid-area: text2;
             justify-self: center;    
+            padding: 1em;
         }
          
         .tittle1 {
             grid-area: tittle1;
             justify-self: center;
             width: 10em;
+            
          
         }
         .tittle2{

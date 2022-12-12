@@ -53,8 +53,9 @@ main {
 footer {
   display: none; }
 
+/*estilos section*/
 /* mq */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 400px) and (max-width: 799px) {
   /*estilos de footer */
   footer {
     display: block;
@@ -77,7 +78,47 @@ footer {
     text-decoration: none;
     color: black; } }
 
-/* MQ */
+/*mq tablet*/
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  main {
+    display: grid;
+    grid-template-areas: "h1 h1" "img p"; }
+    main h1 {
+      grid-area: h1; }
+    main img {
+      grid-area: img;
+      justify-self: center;
+      width: 80%; }
+    main p {
+      display: block;
+      border: dashed 1px #a1c8e9;
+      width: 24em;
+      grid-area: p;
+      justify-self: center;
+      padding: 0.8em;
+      text-align: center;
+      margin-right: 1rem; }
+  footer {
+    display: block;
+    text-align: center; }
+    footer h2 {
+      font-size: 20px;
+      margin-top: 1em;
+      border: solid 0.1em #a1c8e9; }
+    footer ul li {
+      display: inline-block;
+      margin: 40px 0px 40px 0px;
+      padding: 10px; }
+    footer ul img {
+      width: 30px;
+      margin-right: 6em;
+      margin-left: 6em; }
+    footer h3 {
+      font-size: 15px;
+      position: relative;
+      bottom: 3em; } }
+
+/* MQ deskop*/
 @media screen and (min-width: 1024px) {
   /*estilos main*/
   main {
@@ -95,7 +136,26 @@ footer {
       grid-area: p;
       justify-self: center;
       padding: 0.8em;
-      text-align: center; } }
+      text-align: center; }
+  footer {
+    display: block;
+    text-align: center; }
+    footer h2 {
+      font-size: 20px;
+      margin-top: 1em;
+      border: solid 0.1em #a1c8e9; }
+    footer ul li {
+      display: inline-block;
+      margin: 40px 0px 40px 0px;
+      padding: 10px; }
+    footer ul img {
+      width: 40px;
+      margin-right: 6em;
+      margin-left: 6em; }
+    footer h3 {
+      font-size: 15px;
+      position: relative;
+      bottom: 3em; } }
 
 /*estilos bibliografia */
 /*estilos main*/
@@ -113,47 +173,93 @@ main .contenedor-foto {
 main div ul ol {
   text-align: start; }
 
+.main-biblio .foto-bibliografia {
+  width: 30%;
+  margin-top: 0.6em; }
+
+.main-biblio .contenedor-titulo1 {
+  background-color: #a1c8e9;
+  text-align: center;
+  margin-top: 0.6em;
+  border: solid #353232;
+  box-shadow: 2px 2px 2px black; }
+
+.main-biblio .contenedor-titulo2 {
+  background-color: #a1c8e9;
+  border: solid #353232;
+  box-shadow: 2px 2px 2px black;
+  text-align: center;
+  margin-top: 0.6em; }
+
+.main-biblio .contenedor-titulo3 {
+  background-color: #a1c8e9;
+  text-align: center;
+  margin-top: 0.6em;
+  border: solid #353232;
+  box-shadow: 2px 2px 2px black; }
+
+.main-biblio .contenedor-titulo4 {
+  background-color: #a1c8e9;
+  border: solid #353232;
+  box-shadow: 2px 2px 2px black;
+  text-align: center;
+  margin-top: 0.6em; }
+
+footer input {
+  margin-bottom: 2em;
+  width: 20em;
+  margin-top: 1em;
+  text-align: center; }
+
 /*mq ceulares*/
-@media screen and (min-width: 600px) {
-  .main-biblio .foto-bibliografia {
-    width: 30%;
-    margin-top: 0.6em; }
-  .main-biblio .contenedor-titulo1 {
-    background-color: #a1c8e9;
-    text-align: center;
-    margin-top: 0.6em;
-    border: solid #353232;
-    box-shadow: 2px 2px 2px black; }
-  .main-biblio .contenedor-titulo2 {
-    background-color: #a1c8e9;
-    border: solid #353232;
-    box-shadow: 2px 2px 2px black;
-    text-align: center;
-    margin-top: 0.6em; }
-  .main-biblio .contenedor-titulo3 {
-    background-color: #a1c8e9;
-    text-align: center;
-    margin-top: 0.6em;
-    border: solid #353232;
-    box-shadow: 2px 2px 2px black; }
-  .main-biblio .contenedor-titulo4 {
-    background-color: #a1c8e9;
-    border: solid #353232;
-    box-shadow: 2px 2px 2px black;
-    text-align: center;
-    margin-top: 0.6em; }
-  footer input {
-    margin-bottom: 2em;
-    width: 50em;
+@media screen and (min-width: 400px) and (max-width: 799px) {
+  .main-biblio {
+    display: flex;
+    flex-direction: column; }
+  .contenedor-titulo1 {
+    width: 35em;
+    align-self: center; }
+  .contenedor-titulo2 {
+    width: 35em;
+    align-self: center; }
+  .contenedor-titulo3 {
+    width: 35em;
+    align-self: center; }
+  .contenedor-titulo4 {
+    width: 35em;
+    align-self: center; } }
+
+/*mq tablet*/
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  .main-biblio {
     margin-top: 1em;
-    text-align: center; } }
+    display: grid;
+    grid-template-areas: "img img img titulo1 titulo2 titulo3" "img img img titulo4 titulo4 titulo4";
+    gap: 1em 1em; }
+    .main-biblio .foto-bibliografia {
+      width: 80%;
+      margin-left: 0.8em; }
+    .main-biblio .contenedor-foto {
+      grid-area: img;
+      justify-self: center; }
+    .main-biblio .contenedor-titulo1 {
+      grid-area: titulo1; }
+    .main-biblio .contenedor-titulo2 {
+      grid-area: titulo2;
+      text-align: center; }
+    .main-biblio .contenedor-titulo3 {
+      grid-area: titulo3;
+      text-align: center; }
+    .main-biblio .contenedor-titulo4 {
+      grid-area: titulo4;
+      text-align: center; } }
 
 /*mq deskop*/
 @media screen and (min-width: 1024px) {
   .main-biblio {
     margin-top: 1em;
     display: grid;
-    grid-template-areas: "img titulo1 titulo2 titulo3" "img titulo4 titulo4 titulo4";
+    grid-template-areas: "img img img titulo1 titulo2 titulo3" "img img img titulo4 titulo4 titulo4";
     gap: 1em 1em; }
     .main-biblio .foto-bibliografia {
       width: 80%;
@@ -175,30 +281,78 @@ main div ul ol {
 
 /* estilos clubes */
 /*estilos main*/
+.main-clubes .text1 {
+  border: solid #353232;
+  box-shadow: 2px 2px 2px black;
+  background-color: #a1c8e9; }
+
+.main-clubes .text2 {
+  text-align: center;
+  border: solid #353232;
+  box-shadow: 2px 2px 2px black;
+  background-color: #a1c8e9;
+  margin-top: 0.6em; }
+
+.main-clubes .tittle1 {
+  border: solid #353232;
+  box-shadow: 2px 2px 2px black;
+  text-align: center; }
+
+.main-clubes .tittle2 {
+  border: solid #353232;
+  box-shadow: 2px 2px 2px black;
+  text-align: center; }
+
+/*estilos footer*/
+.input-clubes {
+  width: 30em; }
+
 /*mq ceulares*/
-@media screen and (min-width: 600px) {
-  .main-clubes .foto-barcelona {
+@media screen and (min-width: 400px) and (max-width: 799px) {
+  .main-clubes {
+    display: flex; }
+    .main-clubes .text1 {
+      padding: 1em; }
+    .main-clubes .text2 {
+      padding: 1em; }
+  .foto-barcelona {
     width: 30%; }
-  .main-clubes .foto-psg {
-    width: 40%; }
-  .main-clubes .text1 {
-    border: solid #353232;
-    box-shadow: 2px 2px 2px black;
-    background-color: #a1c8e9; }
-  .main-clubes .text2 {
-    text-align: center;
-    border: solid #353232;
-    box-shadow: 2px 2px 2px black;
-    background-color: #a1c8e9;
-    margin-top: 0.6em; }
-  .main-clubes .tittle1 {
-    border: solid #353232;
-    box-shadow: 2px 2px 2px black;
-    text-align: center; }
-  .main-clubes .tittle2 {
-    border: solid #353232;
-    box-shadow: 2px 2px 2px black;
-    text-align: center; } }
+  .foto-psg {
+    width: 50%; } }
+
+/*mq tablet*/
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  .main-clubes {
+    margin-top: 0.8em;
+    display: grid;
+    grid-template-areas: "tittle1 tittle2" "img1 img2" "text1 text2";
+    gap: 1em 1em; }
+    .main-clubes .foto-barcelona {
+      width: 40%;
+      grid-area: img1;
+      align-items: center; }
+    .main-clubes .foto-psg {
+      width: 60%;
+      grid-area: img2; }
+    .main-clubes .text1 {
+      grid-area: text1;
+      justify-self: center;
+      text-align: center;
+      padding: 1em; }
+    .main-clubes .text2 {
+      grid-area: text2;
+      justify-self: center;
+      text-align: center;
+      padding: 1em; }
+    .main-clubes .tittle1 {
+      grid-area: tittle1;
+      justify-self: center;
+      width: 10em; }
+    .main-clubes .tittle2 {
+      grid-area: tittle2;
+      justify-self: center;
+      align-self: center;
+      width: 10em; } }
 
 /*mq deskop*/
 @media screen and (min-width: 1024px) {
@@ -216,10 +370,12 @@ main div ul ol {
       grid-area: img2; }
     .main-clubes .text1 {
       grid-area: text1;
-      justify-self: center; }
+      justify-self: center;
+      padding: 1em; }
     .main-clubes .text2 {
       grid-area: text2;
-      justify-self: center; }
+      justify-self: center;
+      padding: 1em; }
     .main-clubes .tittle1 {
       grid-area: tittle1;
       justify-self: center;
@@ -232,26 +388,55 @@ main div ul ol {
 
 /* estilos seleccion */
 /*mq celulares*/
-@media screen and (min-width: 600px) {
-  .contenedor-seleccion .titulo-seleccion {
-    border: solid #353232;
-    box-shadow: 2px 2px 2px black;
-    margin-top: 0.5em;
-    background-color: #a1c8e9;
-    text-align: center; }
-  .contenedor-seleccion .img-seleccion {
-    width: 60%;
+.contenedor-seleccion .titulo-seleccion {
+  border: solid #353232;
+  box-shadow: 2px 2px 2px black;
+  margin-top: 0.5em;
+  background-color: #a1c8e9;
+  text-align: center; }
+
+.contenedor-seleccion .img-seleccion {
+  width: 60%;
+  margin-top: 0.5em; }
+
+.contenedor-seleccion .ul-seleccion {
+  background-color: #a1c8e9;
+  border: solid #353232;
+  box-shadow: 2px 2px 2px black;
+  text-align: center;
+  margin-top: 0.5em; }
+  .contenedor-seleccion .ul-seleccion ol {
     margin-top: 0.5em; }
-  .contenedor-seleccion .ul-seleccion {
-    background-color: #a1c8e9;
-    border: solid #353232;
-    box-shadow: 2px 2px 2px black;
-    text-align: center;
-    margin-top: 0.5em; }
-    .contenedor-seleccion .ul-seleccion ol {
-      margin-top: 0.5em; }
+
+.footer-seleccion {
+  margin-top: 10em; }
+
+@media screen and (min-width: 400px) and (max-width: 799px) {
+  .contenedor-seleccion {
+    display: flex; }
+    .contenedor-seleccion .img-seleccion {
+      width: 70%; }
   .footer-seleccion {
     margin-top: 10em; } }
+
+/*mq tablet*/
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  .contenedor-seleccion {
+    display: grid;
+    grid-template-areas: "titulo-seleccion titulo-seleccion" "img-seleccion  ul-seleccion"; }
+    .contenedor-seleccion .titulo-seleccion {
+      grid-area: titulo-seleccion;
+      justify-self: center; }
+    .contenedor-seleccion .img-seleccion {
+      grid-area: img-seleccion;
+      justify-self: center; }
+    .contenedor-seleccion .ul-seleccion {
+      grid-area: ul-seleccion;
+      justify-self: center;
+      padding: 1em;
+      width: 25em; }
+  .footer-seleccion {
+    margin-top: 3em; } }
 
 /* MQ deskopt */
 @media screen and (min-width: 1024px) {

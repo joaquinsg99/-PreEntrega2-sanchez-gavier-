@@ -65,10 +65,13 @@ main {
 footer {
     display: none;
 }
- 
+
+/*estilos section*/
+
+
 /* mq */
  
-@media screen and (min-width:600px){
+@media screen and (min-width:400px) and (max-width: 799px){
     /*estilos de footer */
    
  
@@ -108,7 +111,73 @@ h3 {
    
 }
 }
-/* MQ */
+/*mq tablet*/
+@media screen and (min-width:800px) and (max-width:1023px) {
+   
+
+main {
+    display: grid;
+    grid-template-areas:
+    "h1 h1"
+    "img p"
+    ;
+    h1 {
+        grid-area: h1;
+    }
+    img {
+        grid-area: img;
+        justify-self: center;
+        width: 80%;
+    }
+    p {
+        display: block;
+        border: dashed 1px  $color-fondo ;
+       width: 24em;
+        grid-area: p;
+        justify-self: center;
+        padding: 0.8em;
+        text-align: center;
+        margin-right: 1rem;
+        
+    }
+}
+footer {
+    display: block;
+    text-align: center;
+
+    h2 {
+        font-size: 20px;
+        margin-top: 1em;
+        border: solid 0.1em $color-fondo ;
+    }
+    ul {
+
+    
+    li {
+        display: inline-block;
+        margin: 40px 0px 40px 0px;
+        padding: 10px;
+    }
+    img {
+        width: 30px;
+        margin-right: 6em;
+            margin-left: 6em;
+    }
+   
+}
+h3 {
+    font-size: 15px;
+    position: relative;
+    bottom: 3em;
+}
+    
+}
+
+}
+
+
+
+/* MQ deskop*/
  
 @media screen and (min-width:1024px){
    /*estilos main*/
@@ -135,7 +204,39 @@ h3 {
             text-align: center;
         }
     }
+    footer {
+        display: block;
+        text-align: center;
     
+        h2 {
+            font-size: 20px;
+            margin-top: 1em;
+            border: solid 0.1em $color-fondo ;
+        }
+        ul {
+    
+        
+        li {
+            display: inline-block;
+            margin: 40px 0px 40px 0px;
+            padding: 10px;
+        }
+       
+        img {
+            width: 40px;
+            margin-right: 6em;
+            margin-left: 6em;
+        }
+       
+    }
+    h3 {
+        font-size: 15px;
+        position: relative;
+        bottom: 3em;
+    }
+}
+    
+
  
 }
 
@@ -143,4 +244,4 @@ h3 {
 @import "estilos-paginas/style-bibliografia.scss"; 
 @import "estilos-paginas/style-clubes.scss";
 @import "estilos-paginas/syle-seleccion.scss";
-@import "estilos-paginas/styles-mejores-jgs.scss"
+@import "estilos-paginas/styles-mejores-jgs.scss";
