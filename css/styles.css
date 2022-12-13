@@ -312,11 +312,12 @@ footer input {
   .main-clubes {
     display: flex; }
     .main-clubes .text1 {
-      padding: 1em; }
+      padding: 1em;
+      margin-top: 1em; }
     .main-clubes .text2 {
       padding: 1em; }
   .foto-barcelona {
-    width: 30%; }
+    width: 60%; }
   .foto-psg {
     width: 50%; } }
 
@@ -328,7 +329,7 @@ footer input {
     grid-template-areas: "tittle1 tittle2" "img1 img2" "text1 text2";
     gap: 1em 1em; }
     .main-clubes .foto-barcelona {
-      width: 40%;
+      width: 60%;
       grid-area: img1;
       align-items: center; }
     .main-clubes .foto-psg {
@@ -362,7 +363,7 @@ footer input {
     grid-template-areas: "tittle1 tittle2" "img1 img2" "text1 text2";
     gap: 1em 1em; }
     .main-clubes .foto-barcelona {
-      width: 40%;
+      width: 80%;
       grid-area: img1;
       align-items: center; }
     .main-clubes .foto-psg {
@@ -459,12 +460,6 @@ footer input {
 .main-jugadas {
   display: flex;
   align-items: center; }
-
-.titulos-jugadas {
-  display: none; }
-
-/* MQ */
-@media screen and (min-width: 600px) {
   .main-jugadas .titulos-jugadas {
     display: block;
     text-align: center;
@@ -472,15 +467,90 @@ footer input {
     box-shadow: 2px 2px 2px black;
     background-color: whitesmoke;
     margin-top: 0.5em; }
-  .main-jugadas .contenedores-videos1 {
-    width: 50%; }
-  .main-jugadas .contenedores-videos2 {
-    width: 50%; }
-  .main-jugadas .contenedores-videos3 {
-    width: 50%; }
-  .main-jugadas .contenedores-videos4 {
-    width: 50%; } }
 
+/* MQ */
+@media screen and (min-width: 400px) and (max-width: 799px) {
+  .main-jugadas iframe {
+    width: 80%; }
+  .main-jugadas .contenedores-videos1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    border: solid #353232;
+    box-shadow: 2px 2px 2px black;
+    background-color: #a1c8e9;
+    margin-top: 0.8em; }
+  .main-jugadas .contenedores-videos2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    border: solid #353232;
+    box-shadow: 2px 2px 2px black;
+    background-color: #a1c8e9;
+    margin-top: 0.8em; }
+  .main-jugadas .contenedores-videos3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    border: solid #353232;
+    box-shadow: 2px 2px 2px black;
+    background-color: #a1c8e9;
+    margin-top: 0.8em; }
+  .main-jugadas .contenedores-videos4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    border: solid #353232;
+    box-shadow: 2px 2px 2px black;
+    background-color: #a1c8e9;
+    margin-top: 0.8em; } }
+
+/*mq tablet*/
+@media screen and (min-width: 800px) and (max-width: 1023px) {
+  .main-jugadas iframe {
+    width: 80%; }
+  .main-jugadas .contenedores-videos1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    border: solid #353232;
+    box-shadow: 2px 2px 2px black;
+    background-color: #a1c8e9;
+    margin-top: 0.8em; }
+  .main-jugadas .contenedores-videos2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    border: solid #353232;
+    box-shadow: 2px 2px 2px black;
+    background-color: #a1c8e9;
+    margin-top: 0.8em; }
+  .main-jugadas .contenedores-videos3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    border: solid #353232;
+    box-shadow: 2px 2px 2px black;
+    background-color: #a1c8e9;
+    margin-top: 0.8em; }
+  .main-jugadas .contenedores-videos4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70%;
+    border: solid #353232;
+    box-shadow: 2px 2px 2px black;
+    background-color: #a1c8e9;
+    margin-top: 0.8em; } }
+
+/*mq deskopt*/
 @media screen and (min-width: 1024px) {
   .main-jugadas {
     display: grid;
@@ -494,7 +564,10 @@ footer input {
       border: solid #353232;
       box-shadow: 2px 2px 2px black;
       padding: 1em;
-      width: 100%; }
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
     .main-jugadas .contenedores-videos2 {
       grid-area: contenedores-videos2;
       justify-self: center;
@@ -502,7 +575,10 @@ footer input {
       border: solid #353232;
       box-shadow: 2px 2px 2px black;
       padding: 1em;
-      width: 100%; }
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
     .main-jugadas .contenedores-videos3 {
       grid-area: contenedores-videos3;
       justify-self: center;
@@ -510,7 +586,10 @@ footer input {
       border: solid #353232;
       box-shadow: 2px 2px 2px black;
       padding: 1em;
-      width: 100%; }
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
     .main-jugadas .contenedores-videos4 {
       grid-area: contenedores-videos4;
       justify-self: center;
@@ -518,4 +597,7 @@ footer input {
       border: solid #353232;
       box-shadow: 2px 2px 2px black;
       padding: 1em;
-      width: 100%; } }
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column; } }

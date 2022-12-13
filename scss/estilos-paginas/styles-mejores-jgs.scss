@@ -3,45 +3,130 @@
 .main-jugadas {
     display: flex;
     align-items: center;
-}
-   
- 
-.titulos-jugadas{
-    display: none;
-}
- 
-/* MQ */
-@media screen and (min-width:600px) {
-    .main-jugadas {
     .titulos-jugadas {
         display: block;
         text-align: center;
         @include estilosBorders;
         background-color: whitesmoke;
         margin-top: 0.5em;
-       
-     
+       }
+}
+   
+ 
+
+ 
+/* MQ */
+@media screen and (min-width:400px) and (max-width: 799px) {
+ .main-jugadas{
+    iframe { 
+        width: 80%;
     }
+    .contenedores-videos1{
+        display: flex;
+       align-items: center;
+        flex-direction: column;
+        width: 50%;
+        @include estilosBorders;
+        background-color: $color-fondo;
+        margin-top: 0.8em;
+
+       
+    }
+    .contenedores-videos2{
+        display: flex;
+        align-items: center;
+         flex-direction: column;
+         width: 50%;
+         @include estilosBorders;
+         background-color: $color-fondo;
+         margin-top: 0.8em;
+ 
+    }
+    .contenedores-videos3{
+        display: flex;
+        align-items: center;
+         flex-direction: column;
+         width: 50%;
+         @include estilosBorders;
+         background-color: $color-fondo;
+         margin-top: 0.8em;
+ 
+    }
+    .contenedores-videos4{
+        display: flex;
+        align-items: center;
+         flex-direction: column;
+         width: 50%;
+         @include estilosBorders;
+         background-color: $color-fondo;
+         margin-top: 0.8em;
+ 
+    }
+
+ }   
     
  
-.contenedores-videos1{
-    width: 50%;
-   
-}
-.contenedores-videos2{
-    width: 50%;
-}
-.contenedores-videos3{
-    width: 50%;
-}
-.contenedores-videos4{
-    width: 50%;
-}
+
     }
  
+
+
+/*mq tablet*/
+@media screen and (min-width:800px) and (max-width: 1023px) {
+    .main-jugadas{
+        iframe { 
+            width: 80%;
+        }
+        .contenedores-videos1{
+            display: flex;
+           align-items: center;
+            flex-direction: column;
+            width: 70%;
+            @include estilosBorders;
+            background-color: $color-fondo;
+            margin-top: 0.8em;
+    
+           
+        }
+        .contenedores-videos2{
+            display: flex;
+            align-items: center;
+             flex-direction: column;
+             width: 70%;
+             @include estilosBorders;
+             background-color: $color-fondo;
+             margin-top: 0.8em;
+     
+        }
+        .contenedores-videos3{
+            display: flex;
+            align-items: center;
+             flex-direction: column;
+             width: 70%;
+             @include estilosBorders;
+             background-color: $color-fondo;
+             margin-top: 0.8em;
+     
+        }
+        .contenedores-videos4{
+            display: flex;
+            align-items: center;
+             flex-direction: column;
+             width: 70%;
+             @include estilosBorders;
+             background-color: $color-fondo;
+             margin-top: 0.8em;
+     
+        }
+    
+     }   
+
 }
+
+
+
  
- 
+ /*mq deskopt*/
 @media screen and (min-width:1024px) {
  
     .main-jugadas {
@@ -60,6 +145,9 @@
         @include estilosBorders;
         padding: 1em;
         width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
      
     .contenedores-videos2 {
@@ -69,6 +157,9 @@
         @include estilosBorders;
         padding: 1em;
         width: 100%;
+        display: flex;
+        align-items: center;
+         flex-direction: column;
     }
      
     .contenedores-videos3 {
@@ -78,6 +169,9 @@
         @include estilosBorders;
         padding: 1em;
         width: 100%;
+        display: flex;
+        align-items: center;
+         flex-direction: column;
     }
    
      
@@ -88,6 +182,9 @@
         @include estilosBorders;
         padding: 1em;
         width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 }
  
