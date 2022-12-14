@@ -227,7 +227,9 @@ footer input {
     align-self: center; }
   .contenedor-titulo4 {
     width: 35em;
-    align-self: center; } }
+    align-self: center; }
+  .titulo-bibliografia {
+    width: 15em; } }
 
 /*mq tablet*/
 @media screen and (min-width: 800px) and (max-width: 1023px) {
@@ -413,6 +415,8 @@ footer input {
   margin-top: 10em; }
 
 @media screen and (min-width: 400px) and (max-width: 799px) {
+  .titulos-seleccionh2 {
+    width: 15em; }
   .contenedor-seleccion {
     display: flex; }
     .contenedor-seleccion .img-seleccion {
